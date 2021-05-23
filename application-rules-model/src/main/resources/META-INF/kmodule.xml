@@ -1,0 +1,11 @@
+<kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://jboss.org/kie/6.0.0/kmodule">
+<kbase name="kbase" default="true" eventProcessingMode="cloud" equalsBehavior="identity" declarativeAgenda="disabled" scope="javax.enterprise.context.ApplicationScoped" packages="*">
+<ksession name="ksession-ruleSet" type="stateless" default="true" clockType="realtime" beliefSystem="simple" scope="javax.enterprise.context.ApplicationScoped" />
+</kbase>
+<kbase name="kbase1" default="false" eventProcessingMode="cloud" equalsBehavior="identity" declarativeAgenda="disabled" scope="javax.enterprise.context.ApplicationScoped" packages="rules">
+<ksession name="ksession-ruleSet1" type="stateless" default="false" clockType="realtime" beliefSystem="simple" scope="javax.enterprise.context.ApplicationScoped" />
+</kbase>
+<kbase name="kbase2" default="false" eventProcessingMode="cloud" equalsBehavior="identity" declarativeAgenda="disabled" scope="javax.enterprise.context.ApplicationScoped" packages="rules2">
+<ksession name="ksession-ruleSet2" type="stateless" default="false" clockType="realtime" beliefSystem="simple" scope="javax.enterprise.context.ApplicationScoped" />
+</kbase>
+</kmodule>
